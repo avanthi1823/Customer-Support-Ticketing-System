@@ -1,0 +1,102 @@
+body {
+  background: #f8f9fa;
+  font-family: "Poppins", sans-serif;
+}
+
+
+.card-summary {
+  border-radius: 15px;
+  color: white;
+  transition: transform 0.25s ease-in-out, box-shadow 0.25s ease-in-out;
+}
+
+.card-summary:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card-raised {
+  background: linear-gradient(135deg, #007bff, #00b4db);
+}
+
+.card-closed {
+  background: linear-gradient(135deg, #28a745, #70e1b8);
+}
+
+.table th {
+  background: #f1f3f5;
+  font-weight: 600;
+}
+
+.table-hover tbody tr:hover {
+  background-color: #f9fcff;
+}
+
+.badge {
+  font-size: 0.9rem;
+  padding: 8px 12px;
+  border-radius: 10px;
+}
+
+
+.btn-outline-primary,
+.btn-success {
+  border-radius: 8px;
+  font-weight: 500;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-outline-primary:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+.btn-success:hover {
+  opacity: 0.9;
+}
+
+
+.form-control,
+.form-select {
+  border-radius: 10px;
+  border-color: #dee2e6;
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.4);
+}
+
+
+.list-group-item {
+  border-radius: 10px;
+  margin-bottom: 6px;
+  border: 1px solid #dee2e6;
+  background-color: #fff;
+}
+
+
+.input-group input {
+  border-radius: 10px 0 0 10px;
+}
+
+.input-group button {
+  border-radius: 0 10px 10px 0;
+}
+
+
+.card {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

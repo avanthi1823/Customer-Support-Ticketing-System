@@ -1,0 +1,406 @@
+
+.agent-dashboard {
+  background-color: #f8f9fa;
+  min-height: 100vh;
+  padding: 30px 20px;
+  font-family: "Inter", sans-serif;
+  position: relative;
+  z-index: 1;
+}
+
+
+.welcome-header h2 {
+  font-size: 1.8rem;
+  color: #007bff;
+}
+
+.welcome-header p {
+  color: #6c757d;
+  font-size: 0.95rem;
+}
+
+
+.summary-card {
+  border-radius: 15px;
+  padding: 25px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  will-change: transform;
+  transform-style: preserve-3d;
+  background: #fff;
+}
+
+.summary-card:hover {
+  transform: translateY(-4px);
+}
+
+.summary-card h5 {
+  margin-top: 12px;
+  font-weight: 600;
+}
+
+.summary-card p {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+
+.blue-gradient {
+  background: linear-gradient(135deg, #007bff, #00bfff);
+  color: #fff;
+}
+
+.yellow-gradient {
+  background: linear-gradient(135deg, #ffc107, #ffe082);
+  color: #333;
+}
+
+.green-gradient {
+  background: linear-gradient(135deg, #28a745, #7dd87d);
+  color: #fff;
+}
+
+
+.ticket-table {
+  border-radius: 12px;
+  background: #fff;
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+}
+
+.table thead {
+  background: #f1f3f5;
+  font-weight: 600;
+}
+
+.table td,
+.table th {
+  vertical-align: middle !important;
+}
+
+.table-hover tbody tr:hover {
+  background-color: #f8f9fa;
+}
+
+.badge {
+  padding: 8px 12px;
+  font-size: 0.85rem;
+  border-radius: 6px;
+}
+
+.btn {
+  border-radius: 8px;
+  transition: all 0.2s ease-in-out;
+  position: relative;
+  z-index: 3;
+  pointer-events: auto;
+  will-change: transform;
+  transform-style: preserve-3d;
+}
+
+.btn:hover {
+  transform: scale(1.03);
+}
+
+.btn-outline-primary:active {
+  transform: scale(0.97);
+  background-color: transparent;
+  color: #fff;
+}
+
+
+.modal-backdrop {
+  position: fixed ;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  backdrop-filter: blur(3px);
+  z-index: 9999 !important; 
+  pointer-events: auto;
+}
+
+.comment-modal {
+  width: 100%;
+  max-width: 480px;
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+  z-index: 1001 !important;
+  position: relative;
+  padding: 24px;
+  overflow: visible;
+}
+
+.comment-modal h5 {
+  font-weight: 600;
+  color: #333;
+}
+
+.comment-modal textarea {
+  border-radius: 10px;
+  border: 1px solid #d6d6d6;
+  resize: none;
+  font-size: 0.95rem;
+  padding: 10px;
+  width: 100%;
+}
+
+.comment-modal textarea:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+  outline: none;
+}
+
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  color: #007bff;
+  font-size: 1.4rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+body {
+  padding-top: 80px;
+}
+
+
+i {
+  vertical-align: middle;
+  font-size: 1.1rem;
+  color: inherit;
+}
+
+.agent-dashboard {
+  z-index: 1;
+}
+
+.ticket-table {
+  z-index: 2;
+}
+
+.btn {
+  z-index: 3;
+}
+
+.comment-modal {
+  z-index: 1001 !important;
+}
+
+.modal-backdrop {
+  z-index: 1000 !important;
+}
+
+.agent-dashboard {
+  background-color: #f8f9fa;
+  min-height: 100vh;
+  padding: 30px 20px;
+  font-family: "Inter", sans-serif;
+  position: relative;
+  z-index: 1;
+}
+
+
+.welcome-header h2 {
+  font-size: 1.8rem;
+  color: #007bff;
+}
+
+.welcome-header p {
+  color: #6c757d;
+  font-size: 0.95rem;
+}
+
+
+.summary-card {
+  border-radius: 15px;
+  padding: 25px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  will-change: transform;
+  transform-style: preserve-3d;
+  background: #fff;
+}
+
+.summary-card:hover {
+  transform: translateY(-4px);
+}
+
+.summary-card h5 {
+  margin-top: 12px;
+  font-weight: 600;
+}
+
+.summary-card p {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+
+.blue-gradient {
+  background: linear-gradient(135deg, #007bff, #00bfff);
+  color: #fff;
+}
+
+.yellow-gradient {
+  background: linear-gradient(135deg, #ffc107, #ffe082);
+  color: #333;
+}
+
+.green-gradient {
+  background: linear-gradient(135deg, #28a745, #7dd87d);
+  color: #fff;
+}
+
+
+.ticket-table {
+  border-radius: 12px;
+  background: #fff;
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+}
+
+.table thead {
+  background: #f1f3f5;
+  font-weight: 600;
+}
+
+.table td,
+.table th {
+  vertical-align: middle !important;
+}
+
+.table-hover tbody tr:hover {
+  background-color: #f8f9fa;
+}
+
+.badge {
+  padding: 8px 12px;
+  font-size: 0.85rem;
+  border-radius: 6px;
+}
+
+
+.btn {
+  border-radius: 8px;
+  transition: all 0.2s ease-in-out;
+  position: relative;
+  z-index: 3;
+  pointer-events: auto;
+  will-change: transform;
+  transform-style: preserve-3d;
+}
+
+.btn:hover {
+  transform: scale(1.03);
+}
+
+.btn-outline-primary:active {
+  transform: scale(0.97);
+  background-color: #007bff;
+  color: #fff;
+}
+
+
+
+.modal-backdrop {
+  position: fixed !important;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000 !important;
+  backdrop-filter: blur(3px);
+   pointer-events: none;
+}
+
+.comment-modal {
+  width: 100%;
+  max-width: 480px;
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+  z-index: 1001 !important;
+  position: relative;
+  padding: 24px;
+  overflow: visible;
+}
+
+.comment-modal h5 {
+  font-weight: 600;
+  color: #333;
+}
+
+.comment-modal textarea {
+  border-radius: 10px;
+  border: 1px solid #d6d6d6;
+  resize: none;
+  font-size: 0.95rem;
+  padding: 10px;
+  width: 100%;
+}
+
+.comment-modal textarea:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+  outline: none;
+}
+
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  color: #007bff;
+  font-size: 1.4rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+
+body {
+  padding-top: 80px;
+}
+
+
+i {
+  vertical-align: middle;
+  font-size: 1.1rem;
+  color: inherit;
+}
+
+
+.agent-dashboard {
+  z-index: 1;
+}
+
+.ticket-table {
+  z-index: 2;
+}
+
+.btn {
+  z-index: 3;
+}
+
+.comment-modal {
+  z-index: 1001 !important;
+}
+
+.modal-backdrop {
+  z-index: 1000 !important;
+  
+}
+
+

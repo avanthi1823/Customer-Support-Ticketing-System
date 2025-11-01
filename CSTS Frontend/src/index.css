@@ -1,0 +1,116 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Body */
+body {
+  background: linear-gradient(135deg, #ffffff, #ffffff);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* ===== Navbar ===== */
+
+.nav-brand {
+  font-size: 1.2rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  margin-left: 1.5rem;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.nav-links a:hover {
+  color: #93c5fd;
+}
+.auth-container button {
+  margin-top: 1rem;
+  background-color: #ef4444;
+}
+
+.auth-container button:hover {
+  background-color: #dc2626;
+}
+
+.nav-links a.active {
+  border-bottom: 2px solid #93c5fd;
+  padding-bottom: 2px;
+}
+
+/* Add space below navbar for content */
+.auth-container {
+  margin-top: 5rem;
+}
+
+/* Card container */
+.auth-container {
+  background: #fff;
+  width: 100%;
+  max-width: 400px;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+
+/* Titles */
+.auth-container h2 {
+  margin-bottom: 1.5rem;
+  color: #111827;
+}
+
+/* Inputs */
+.auth-container input,
+.auth-container select {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 1rem;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 15px;
+}
+
+/* Button */
+.auth-container button {
+  width: 100%;
+  padding: 10px 0;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.25s;
+}
+
+.auth-container button:hover {
+  background-color: #ffffff;
+}
+
+/* Message */
+.auth-container p {
+  margin-top: 1rem;
+  color: #374151;
+  font-size: 14px;
+}
+
+/* Links */
+.auth-container a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.auth-container a:hover {
+  text-decoration: underline;
+}
